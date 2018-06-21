@@ -14,13 +14,8 @@ Run the following commands to build the app locally. A recent version of npm and
 
 ```sh
 $ npm install
-$ npm run client
-```
-
-In a seperate terminal tab/window
-
-```sh
-$ npm run server
+$ npm run build
+$ npm start
 ```
 
 The app will be found at http://localhost:3000
