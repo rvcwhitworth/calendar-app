@@ -1,36 +1,27 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import $ from 'jquery';
-import List from './components/List.jsx';
+import React from "react";
+import ReactDOM from "react-dom";
+import Month from "./components/Month.jsx";
+import axios from "axios";
 
 class App extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { 
-      items: []
-    }
+    var today = new Date();
+    this.state = {
+      currentMonth: today.getMonth(),
+      currentDay: today.getDay()
+    };
   }
 
-  componentDidMount() {
-    $.ajax({
-      url: '/items', 
-      success: (data) => {
-        this.setState({
-          items: data
-        })
-      },
-      error: (err) => {
-        console.log('err', err);
-      }
-    });
-  }
+  componentDidMount() {}
 
-  render () {
-    return (<div>
-      <h1>Item List</h1>
-      <List items={this.state.items}/>
-    </div>)
+  render() {
+    return (
+      <div className="wrapper">
+        <Month />
+      </div>
+    );
   }
 }
 
-ReactDOM.render(<App />, document.getElementById('app'));
+ReactDOM.render(<App />, document.getElementById("app"));

@@ -1,0 +1,13 @@
+.wrapper {
+  width: 700px;
+  margin: auto;
+  height: auto;
+  border: 1px black solid;
+  border-radius: 5%;
+}
+
+.calendar {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+}
