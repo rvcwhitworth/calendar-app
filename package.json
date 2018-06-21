@@ -4,8 +4,10 @@
   "description": "A calendar app made for the second challenge in my application for the 2018 Spotify Fellowship.",
   "main": "index.js",
   "scripts": {
-    "client": "webpack -d --watch",
-    "server": "nodemon server/index.js"
+    "build": "webpack -d",
+    "start": "node CalendarBackend/server/index.js",
+    "client-dev": "webpack -d --watch",
+    "server-dev": "nodemon CalendarBackend/server/index.js"
   },
   "author": "Ryan Whitworth",
   "license": "ISC",
@@ -17,6 +19,7 @@
     "webpack": "^2.2.1"
   },
   "dependencies": {
+    "axios": "^0.18.0",
     "body-parser": "^1.17.2",
     "express": "^4.15.0",
     "mongoose": "^4.8.6",
