@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "description": "A calendar app made for the second challenge in my application for the 2018 Spotify Fellowship.",
   "main": "index.js",
+  "private": true,
   "scripts": {
-    "build": "webpack -d",
-    "start": "node CalendarBackend/server/index.js",
+    "start": "npm i && webpack -d && node CalendarBackend/server/index.js",
     "client-dev": "webpack -d --watch",
     "server-dev": "nodemon CalendarBackend/server/index.js"
   },
@@ -24,6 +24,7 @@
     "express": "^4.15.0",
     "mongoose": "^4.8.6",
     "react": "^15.4.2",
-    "react-dom": "^15.4.2"
+    "react-dom": "^15.4.2",
+    "react-modal": "^3.4.5"
   }
 }

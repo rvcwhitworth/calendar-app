@@ -1,13 +1,139 @@
-.wrapper {
-  width: 700px;
-  margin: auto;
-  height: auto;
-  border: 1px black solid;
-  border-radius: 5%;
+html {
+  box-sizing: border-box;
 }
 
-.calendar {
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.wrapper,
+.day-wrapper,
+.week-wrapper {
+  width: 97%;
+  margin: 1% auto;
+  border: 1px black solid;
+  border-radius: 5px;
+  height: auto;
+}
+
+.day-wrapper {
+  display: flex;
+  flex-flow: column nowrap;
+  padding: 0 1% 1% 1%;
+}
+
+.calendar-5-rows,
+.calendar-6-rows,
+.week-header,
+.week {
+  margin: 0.5% auto;
+  width: 98%;
   display: grid;
+  grid-gap: 0.3%;
+}
+
+.calendar-5-rows,
+.calendar-6-rows {
   grid-template-columns: repeat(7, 1fr);
+  height: 800px;
+}
+
+.calendar-5-rows {
   grid-template-rows: repeat(5, 1fr);
+}
+
+.calendar-6-rows {
+  grid-template-rows: repeat(6, 1fr);
+}
+
+.weekday {
+  margin: auto;
+}
+
+[class*="-button"] {
+  height: 25%;
+  margin: auto 2%;
+}
+
+.week-header,
+.week {
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: 1fr;
+}
+
+.month-header,
+.day-view-header,
+.week-view-header {
+  display: flex;
+  justify-content: space-between;
+  width: 97%;
+  margin: auto;
+}
+
+.day {
+  display: flex;
+  flex-flow: column nowrap;
+  overflow-y: auto;
+  background-color: lightgray;
+  cursor: pointer;
+  justify-content: flex-start;
+}
+
+.day:hover {
+  background-color: rgb(235, 235, 235);
+}
+
+.empty-day {
+  background-color: white;
+}
+
+.day p {
+  margin: 0 0 0 1%;
+}
+
+.event {
+  width: 96%;
+  margin: 2%;
+  background-color: lightsteelblue;
+  border-radius: 5px;
+  border: 0.5px black solid;
+}
+
+.event:hover {
+  background-color: rgb(217, 232, 252);
+}
+
+.event-content {
+  margin: 1%;
+}
+
+.modal h3 {
+  margin: 0;
+}
+
+.modal {
+  position: absolute;
+  top: 25%;
+  left: 40%;
+  right: 40%;
+  bottom: 30%;
+  border: 2px black solid;
+  border-radius: 5px;
+  background-color: white;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: space-around;
+}
+.modal div {
+  width: 97%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
 }

@@ -10,11 +10,9 @@ A deployed version of this app can be found [here]. It is running with a single 
 
 ## Installation
 
-Run the following commands to build the app locally. A recent version of npm and nodemon is required.
+A recent version of npm and Node.js is required. Run the following command from the root directory to build the app locally.
 
 ```sh
-$ npm install
-$ npm run build
 $ npm start
 ```
 
