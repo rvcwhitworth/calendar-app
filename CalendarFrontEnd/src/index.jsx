@@ -26,7 +26,9 @@ class App extends React.Component {
         description: "dummy data",
         date: today
       },
-      weekStart: new Date(today - today.getDay())
+      weekStart: new Date(
+        today.getTime() - today.getDay() * 1000 * 60 * 60 * 24
+      )
     };
 
     this.changeMonth = this.changeMonth.bind(this);
