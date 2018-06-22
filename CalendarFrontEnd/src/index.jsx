@@ -243,6 +243,8 @@ class App extends React.Component {
           <Week
             weekStart={weekStart}
             handleWeekChange={this.changeWeek}
+            handleEventClick={this.openModifyModal}
+            handleDayClick={this.openCreateModal}
             events={yearlyEvents}
           />
         ) : (
