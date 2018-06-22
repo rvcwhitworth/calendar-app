@@ -2,7 +2,7 @@
 
 ## Introduction
 
-A calendar app made for the second challenge in my application for the 2018 Spotify Fellowship.
+A calendar app made for the second challenge in my application for the 2018 Spotify Fellowship. There are three views available: month, week, and day. New events can be created by clicking on the day, and events can be updated or deleted by clicking on them.
 
 ## Deployment
 
@@ -18,4 +18,4 @@ $ npm start
 
 The app will be found at http://localhost:3000
 
-[here]: placeholder-url
+[here]: https://spotify-calendar.herokuapp.com/
