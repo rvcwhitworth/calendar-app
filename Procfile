@@ -1,0 +1,1 @@
+web: npm i && webpack -d && node CalendarBackend/server/index.js
