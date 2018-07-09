@@ -5,7 +5,7 @@
   "main": "index.js",
   "private": true,
   "scripts": {
-    "start": "npm i && webpack -d && node CalendarBackend/server/index.js",
+    "start": "npm i && webpack -p && node CalendarBackend/server/index.js",
     "client-dev": "webpack -d --watch",
     "server-dev": "nodemon CalendarBackend/server/index.js"
   },

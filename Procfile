@@ -1,1 +1,1 @@
-web: npm i && webpack -d && node CalendarBackend/server/index.js
+web: webpack -p && node CalendarBackend/server/index.js
