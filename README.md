@@ -10,10 +10,16 @@ A deployed version of this app can be found [here]. It is running with a single 
 
 ## Installation
 
-A recent version of npm and Node.js is required. Run the following command from the root directory to build the app locally.
+A recent version of npm and Node.js is required. Run the following command from the root directory to build and start the app locally on a Windows system.
 
 ```sh
-$ npm start
+$ npm run start:win
+```
+
+Alternatively, to build and start the app on a Unix system, run the following.
+
+```sh
+$ npm run start:unix
 ```
 
 The app will be found at http://localhost:3000
